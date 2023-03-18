@@ -201,8 +201,14 @@
     <Compile Include="Migrations\202303180302466_PopulateCategoryTable.Designer.cs">
       <DependentUpon>202303180302466_PopulateCategoryTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202303180341029_AddAttendance.cs" />
+    <Compile Include="Migrations\202303180341029_AddAttendance.Designer.cs">
+      <DependentUpon>202303180341029_AddAttendance.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\Attendance.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -300,6 +306,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303180302466_PopulateCategoryTable.resx">
       <DependentUpon>202303180302466_PopulateCategoryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303180341029_AddAttendance.resx">
+      <DependentUpon>202303180341029_AddAttendance.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
