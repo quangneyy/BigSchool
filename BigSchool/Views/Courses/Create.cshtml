@@ -7,6 +7,7 @@
 <h2>Create</h2>
 @using (Html.BeginForm(Model.Action, "Courses"))
 {
+<form>
     @Html.AntiForgeryToken()
     @Html.HiddenFor(m => m.Id)
     <div class="form-group">
@@ -31,7 +32,11 @@
         @Html.ValidationMessageFor(m => m.Category)
     </div>
     <button type="submit" value="Save" class="btn btn-primary">Save</button>
+    <div class="form-group"></div>
+    <div class="form-group"></div>
+    <div class="form-group"></div>
+</form>
 }
-@section scripts {
-    @Scripts.Render("~/bundles/jqueryval");
-}
+        @section scripts {
+            @Scripts.Render("~/bundles/jqueryval");
+        }

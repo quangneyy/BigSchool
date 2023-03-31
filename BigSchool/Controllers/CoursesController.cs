@@ -18,7 +18,7 @@ namespace BigSchool.Controllers
         {
             _dbContext = new ApplicationDbContext();
         }
-
+        
         public DateTime DateTime { get; private set; }
         public byte CategoryId { get; private set; }
         public object Place { get; private set; }
